@@ -52,25 +52,7 @@ return i;
 <body  onload="startTime()">
 
 <!-- Navbar -->
-<div class="atom-top">
-  <div class="atom-bar atom-red atom-card-2 atom-left-align atom-large">
-    <a class="atom-bar-item atom-button atom-hide-medium atom-hide-large atom-opennav atom-right atom-padding-large atom-hover-white atom-large atom-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="" class="atom-bar-item atom-button atom-padding-large atom-white">Home</a>
-    <a href="about.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">About</a>
-    <a href="blog.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Blog</a>
-    <a href="service.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Service</a>
-    <a href="contact.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Contact</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="atom-bar-block atom-white atom-hide atom-hide-large atom-hide-medium atom-large">
-    <a href="about.php" class="atom-bar-item atom-button atom-padding-large">About</a>
-    <a href="blog.php" class="atom-bar-item atom-button atom-padding-large">Blog</a>
-    <a href="service.php" class="atom-bar-item atom-button atom-padding-large">Service</a>
-    <a href="contact.php" class="atom-bar-item atom-button atom-padding-large">Contact</a>
-  </div>
-</div>
-
+<?php include("includs/nav.php");?>
 <!-- Header -->
 <header class="atom-container atom-red atom-center atom-padding-128">
   <h1 class="atom-margin atom-jumbo">
@@ -96,7 +78,7 @@ return i;
   
   </h1>
   <p class="atom-xlarge">App by atomap </p>
-  <a href="#"><button class="atom-button atom-black atom-padding-large atom-large atom-margin-top">Get Started</button></a>
+  <a href="time.php"><button class="atom-button atom-black atom-padding-large atom-large atom-margin-top">Get Started</button></a>
   
   
  <div style="clear:boath"></div>
@@ -277,6 +259,18 @@ echo $dt->format('H:i');
  </div>
  <p>Powered by <a href="https://www.atomapgroup.com" target="_blank">AtomAP Group</a></p>
 </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction1() {
+    var x = document.getElementById("navDemo1");
+    if (x.className.indexOf("atom-show") == -1) {
+        x.className += " atom-show";
+    } else { 
+        x.className = x.className.replace(" atom-show", "");
+    }
+}
+</script>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button

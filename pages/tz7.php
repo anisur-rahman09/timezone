@@ -79,35 +79,11 @@ mytime=setTimeout('AjaxFunction();',refresh)
 <body  onload="timer_function();">
 
 <!-- Navbar -->
-<div class="atom-top">
-  <div class="atom-bar atom-red atom-card-2 atom-left-align atom-large">
-    <a class="atom-bar-item atom-button atom-hide-medium atom-hide-large atom-opennav atom-right atom-padding-large atom-hover-white atom-large atom-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="../index.php" class="atom-bar-item atom-button atom-padding-large atom-white">Home</a>
-    <a href="../about.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">About</a>
-    <a href="../blog.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Blog</a>
-    <a href="../service.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Service</a>
-    <a href="../contact.php" class="atom-bar-item atom-button atom-hide-small atom-padding-large atom-hover-white">Contact</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="atom-bar-block atom-white atom-hide atom-hide-large atom-hide-medium atom-large">
-    <a href="../about.php" class="atom-bar-item atom-button atom-padding-large">About</a>
-    <a href="../blog.php" class="atom-bar-item atom-button atom-padding-large">Blog</a>
-    <a href="../service.php" class="atom-bar-item atom-button atom-padding-large">Service</a>
-    <a href="../contact.php" class="atom-bar-item atom-button atom-padding-large">Contact</a>
-  </div>
-</div>
+<?php include("../includs/nav.php");?>
 
 
  
  
-
-
-
-
-
-
-
 
 <!-- First Grid -->
 <div class="atom-row-padding atom-padding-64 atom-container">
